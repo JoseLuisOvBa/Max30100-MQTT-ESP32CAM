@@ -1,3 +1,5 @@
+#include <Esplora.h>
+
 /*Oxig Ritmo Cardiaco
  * Envio de datos del sensor MAX30100 por MQTT
  * por: Hugo Escalpelo
@@ -31,8 +33,9 @@ const char* ssid = "OviRab";  // Aquí debes poner el nombre de tu red
 const char* password = "99121976";  // Aquí debes poner la contraseña de tu red
 
 //Datos del broker MQTT
-const char* mqtt_server = "192.168.1.108"; // Si estas en una red local, coloca la IP asignada, en caso contrario, coloca la IP publica
-IPAddress server(192,168,1,108);
+const char* mqtt_server = "192.168.1.103"; // Si estas en una red local, coloca la IP asignada, en caso contrario, coloca la IP publica
+IPAddress server(192,168,1,103);   //ifconfig en la terminal me da este numero
+
 
 // Objetos
 WiFiClient espClient; // Este objeto maneja los datos de conexion WiFi
