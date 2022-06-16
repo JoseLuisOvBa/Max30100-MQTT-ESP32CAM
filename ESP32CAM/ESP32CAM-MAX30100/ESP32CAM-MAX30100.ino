@@ -1,6 +1,4 @@
-#include <Esplora.h>
-
-/*Oxig Ritmo Cardiaco
+/*
  * Envio de datos del sensor MAX30100 por MQTT
  * por: Hugo Escalpelo
  * Fecha: 24 de enero de 2022
@@ -28,6 +26,7 @@
 #include "MAX30105.h" //Biblioteca del sensor
 #include "spo2_algorithm.h" //Biblioteca para el calculo de la oxigenacion
 
+
 //Datos de WiFi
 const char* ssid = "OviRab";  // Aquí debes poner el nombre de tu red
 const char* password = "99121976";  // Aquí debes poner la contraseña de tu red
@@ -35,6 +34,8 @@ const char* password = "99121976";  // Aquí debes poner la contraseña de tu re
 //Datos del broker MQTT
 const char* mqtt_server = "192.168.1.103"; // Si estas en una red local, coloca la IP asignada, en caso contrario, coloca la IP publica
 IPAddress server(192,168,1,103);   //ifconfig en la terminal me da este numero
+
+
 
 
 // Objetos
